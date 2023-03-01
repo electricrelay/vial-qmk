@@ -18,13 +18,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
-/* USB Device descriptor parameter */
-#define VENDOR_ID       0x4358 // "CX"
-#define PRODUCT_ID      0x3630 // "60"
-#define DEVICE_VER      0x0001
-#define MANUFACTURER    CX60
-#define PRODUCT         CX60
-
 /* key matrix size */
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 14
@@ -32,7 +25,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 /* Keyboard Matrix Assignments */
 #define MATRIX_ROW_PINS { F1, F4, F5, F6, E6 }
 #define MATRIX_COL_PINS { C7, C6, F7, F0, B4, D7, D6, B0, B1, B2, B3, D2, D3, D5 }
-#define UNUSED_PINS
 
 /* Backlight Setup */
 #define BACKLIGHT_PIN B7
@@ -56,10 +48,3 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 #define LED_CAPS_LOCK_PIN B5
 #define LED_PIN_ON_STATE 0
-
-/* Vial setup */
-#ifdef VIAL_ENABLE
-#define VIAL_KEYBOARD_UID {0xB2, 0x57, 0x48, 0xED, 0x67, 0x80, 0x12, 0x18}
-#define VIAL_UNLOCK_COMBO_ROWS { 0, 1 }
-#define VIAL_UNLOCK_COMBO_COLS { 0, 1 }
-#endif
